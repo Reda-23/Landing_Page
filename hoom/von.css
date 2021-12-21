@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Permanent+Marker&family=Press+Start+2P&family=Satisfy&family=Smooch&family=Source+Code+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Press+Start+2P&family=Satisfy&family=Smooch&family=Source+Code+Pro&display=swap');
+*{
+    margin: 0;
+    padding:0 ;
+    box-sizing: border-box;
+}
+header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(./Images/gg.jpg);
+    background-position: center;
+    background-size: cover;
+}
+nav{
+    width: 100%;
+    height: 15vh;
+    background: rgba(0,0,0,0.4) ;
+    color: whitesmoke;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+}
+nav .logo{
+    width: 25%;
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Abril Fatface', cursive;
+}
+nav .menu{
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+}
+nav .menu a{
+    width: 25%;
+    text-decoration: none;
+    color: whitesmoke;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+}
+nav .menu a:first-child{
+    color: yellow;
+}
+nav .menu a:hover{
+    color: yellow;
+}
+main{
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+section{
+    color: blanchedalmond;
+    font-family:'Abril Fatface', cursive;
+   
+}
+section h3{
+    font-size: 35px;
+    font-weight: 200;
+    letter-spacing: 3px;
+    text-shadow: 1px 1px 2px black;
+}
+section h1{
+    margin: 20px 0 20px 0;
+    font-size: 55px;
+    font-weight: 700;
+    text-shadow: 2px 1px 5px black;
+    text-transform: uppercase;
+}
+section p{
+    font-size: 25px;
+    color: #eee;
+    word-spacing: 2px;
+    margin-bottom: 25px;
+    text-shadow: 1px 1px 1px black;
+}
+section a{
+    padding: 12px 30px ;
+    border-radius: 4px;
+    outline: none;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 500;
+    text-decoration:none ;
+    letter-spacing: 1px;
+}
+section .btnone{
+    background:#fff ;
+    color: #000;
+    transition: 0.2s ease; 
+}
+section .btnone:hover{
+    color: yellow;
+}
+section .btntwo{
+    background:#fff ;
+    color: yellow;
+    transition: 0.2s ease;
+}
+section .btntwo:hover{
+    color: black;
+}
+.changecontent:after{
+    content: '';
+    animation: changetext 5s infinite linear;
+    color: yellow;
+}
+@keyframes changetext{
+    0%{content: "FES";}
+    20%{content: "RABAT";}
+    35%{content: "CASABLANCA";}
+    60%{content: "AGADIR";}
+    80%{content: "TANGER";}
+    100%{content: "MARRAKECH";}
+
+
+}
