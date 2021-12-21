@@ -1,0 +1,100 @@
+/* Fonts Links */
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&family=Smooch&family=Source+Code+Pro&display=swap');
+/*     font-family: 'Smooch', cursive; */
+body{
+    margin: 10px 80px;
+    font-family: 'Source Code Pro', monospace;
+}
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+nav h1{
+    font-family: 'Satisfy', cursive;
+    font-size: 40px;
+    cursor: pointer;
+}
+nav .onglets{
+    margin-top: 35px;
+}
+nav .onglets a{
+    text-decoration: none;
+    color: black;
+    margin-right: 17px;
+    transition: 0.3 ease-in-out;
+}
+nav .onglets a:hover{
+    color: blueviolet;
+}
+.articles{
+    margin-top: 30px;
+
+}
+.articles .article{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+.articles .article .left img{
+    height: 300px;
+    width: 500px;
+    cursor: pointer;
+}
+.articles .article .right{
+    max-width: 50%;
+    margin-left: 40px;
+}pointer
+.articles .article .right p.date{
+    color: grey;
+}
+.articles .article .right p.description{
+    color: #333232;
+}
+footer{
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: grey;
+}
+footer h2{
+    font-size: 10px;
+    font-family: monospace;
+}
+footer .social-media{
+    display: flex;
+}
+footer .social-media p{
+    cursor: pointer;
+    font-size: 20px;
+    margin-right: 20px;
+    transition: 0.2 ease;
+}
+footer .social-media p:hover{
+    color:blueviolet;
+}
+/* Mobile form */
+@media screen and (max-width:630px) {
+    nav h1{
+        margin-left: 30%;
+    }
+    body{
+        margin: 10px 20px;
+    }
+    nav .onglets{
+        margin-top: -10px;
+    }
+    .articles .article .left img{
+        height: 100%;
+        width: 100%;
+    }
+    .articles .article .right{
+        margin:0 ;
+        max-width: 100%;
+    }
+    .footer .social-media{
+        margin-top: -20px;
+    }
+}
